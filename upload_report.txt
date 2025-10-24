@@ -1,0 +1,8 @@
+Uploaded Files Report
+=====================
+File: filetest1.txt, Size:  bytes
+File: filetest2.txt, Size:  bytes
+Verification Results
+=====================
+filetest1.txt exists in S3.
+filetest2.txt exists in S3.
