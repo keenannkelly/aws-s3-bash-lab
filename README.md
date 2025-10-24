@@ -4,7 +4,7 @@ A bash script that automates file uploads to Amazon S3 with security checks and 
 
 ## 🎯 Project Overview
 
-This project demonstrates AWS CLI proficiency, bash scripting skills, and cloud storage automation. The script uploads local files to an S3 bucket while performing security checks and generating detailed reports.
+This project demonstrates AWS CLI proficiency, bash scripting skills, and cloud storage automation. The script uploads local files to an S3 bucket while performing security checks and generating detailed reports. I enjoyed this and wish to continue my learning.
 
 ## 🏗️ Architecture Diagram
 
@@ -34,37 +34,47 @@ The diagram illustrates the complete workflow:
 - Generated Access Key and Secret Key for AWS CLI authentication
 - Configured AWS CLI with credentials and region
 
-![AWS CLI Configuration](images/aws-configure.png)
 *AWS CLI configuration with credentials and region setup*
+
+![AWS CLI Configuration](images/aws-configure.png)
+
 
 ### 2. Project Setup
 - Created directory called `files-to-backup`
 - Added sample text files for testing
 - Created S3 bucket: `keenan-s3-bucket-backup`
-
-![Directory Creation](images/mkdirpng.png)
+  
 *Creating the files-to-backup directory structure*
 
-### 3. Script Development
+![Directory Creation](images/mkdirpng.png)
+
+
+### 3. Script
 - Saved the script using `nano s3_backup.sh`
 - Made script executable: `chmod +x s3_backup.sh`
 - Executed the script and verified results
+  
+*Saving the backup script with nano*
 
 ![Script Creation](images/save-script.png)
-*Creating and saving the backup script with nano*
+
+
+*Making the script executable with chmod +x s3_backup.sh*
 
 ![Grant Permissions](images/grant-executable-permissions.png)
-*Making the script executable with chmod +x*
+
 
 ### 4. Verification
 - Checked S3 bucket to confirm files were uploaded successfully
 - Reviewed generated report for upload verification
-
-![CLI Verification](images/verify-files-cli.png)
 *Verifying uploaded files using AWS CLI*
 
-![Console Verification](images/verify-files-aws-console.png)
+![CLI Verification](images/verify-files-cli.png)
+
 *Confirming file uploads in the AWS S3 console*
+
+![Console Verification](images/verify-files-aws-console.png)
+
 
 ## 📋 Script Features
 
@@ -98,7 +108,6 @@ The diagram illustrates the complete workflow:
 
 # =============================================================================
 # S3 Backup Script with Security Check
-# Author: Keenan Kelly
 # Purpose: Upload files to S3, check bucket security, and generate reports
 # =============================================================================
 
@@ -211,9 +220,8 @@ cat upload_report.txt
 Checking if the bucket is public...
 The bucket keenan-s3-bucket-backup is private.
 Uploading files to S3...
-Uploaded: sample1.txt
-Uploaded: sample2.txt
-Uploaded: data.json
+Uploaded: filetest1.txt
+Uploaded: filetest2.txt
 Generating report...
 Verifying uploaded files...
 Backup, bucket check, and verification complete. Report saved to ./upload_report.txt.
@@ -223,9 +231,9 @@ Backup, bucket check, and verification complete. Report saved to ./upload_report
 
 The images above demonstrate the complete project workflow from setup to verification, showing:
 
-✅ **AWS CLI Configuration** - Proper credential setup  
+✅ **AWS CLI Configuration** - Credential setup  
 ✅ **Directory Structure** - Organized file management  
-✅ **Script Development** - Professional bash scripting  
+✅ **Scripting** - Practical bash scripting  
 ✅ **Permission Management** - Security best practices  
 ✅ **Verification Process** - Both CLI and console validation  
 
@@ -236,15 +244,13 @@ This visual documentation proves hands-on experience with AWS services and autom
 ```
 Uploaded Files Report
 =====================
-File: sample1.txt, Size: 156 bytes
-File: sample2.txt, Size: 89 bytes
-File: data.json, Size: 203 bytes
+File: filetest1.txt, Size: 156 bytes
+File: filetest2.txt, Size: 89 bytes
 
 Verification Results
 =====================
-sample1.txt exists in S3.
-sample2.txt exists in S3.
-data.json exists in S3.
+filetest1.txt exists in S3.
+filetest2.txt exists in S3.
 ```
 
 ## 🔐 AWS Resources Used
@@ -273,19 +279,7 @@ data.json exists in S3.
 - **Error Handling**: Robust validation and error management
 - **Security Awareness**: Bucket security assessment
 - **Automation**: Streamlined backup and verification process
-- **Documentation**: Clear code comments and user instructions
 
-## 🔄 Future Enhancements
-
-- **Encryption**: Add server-side encryption options
-- **Versioning**: Enable S3 object versioning
-- **Scheduling**: Add cron job automation
-- **Logging**: Enhanced CloudWatch integration
-- **Notifications**: SNS alerts for backup status
-
-## 👨‍💻 Author
-
-**Keenan Kelly**
 
 This project demonstrates practical AWS skills and automation capabilities for cloud storage management.
 
