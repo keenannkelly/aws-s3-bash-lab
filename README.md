@@ -8,7 +8,7 @@ This project demonstrates AWS CLI proficiency, bash scripting skills, and cloud 
 
 ## 🏗️ Architecture Diagram
 
-![S3 Backup Architecture](architecture-diagram.png)
+![S3 Backup Architecture](images/architecture.png)
 
 The diagram illustrates the complete workflow:
 - **User Environment**: Local bash script execution
@@ -34,19 +34,37 @@ The diagram illustrates the complete workflow:
 - Generated Access Key and Secret Key for AWS CLI authentication
 - Configured AWS CLI with credentials and region
 
+![AWS CLI Configuration](images/aws-configure.png)
+*AWS CLI configuration with credentials and region setup*
+
 ### 2. Project Setup
 - Created directory called `files-to-backup`
 - Added sample text files for testing
 - Created S3 bucket: `keenan-s3-bucket-backup`
+
+![Directory Creation](images/mkdirpng.png)
+*Creating the files-to-backup directory structure*
 
 ### 3. Script Development
 - Saved the script using `nano s3_backup.sh`
 - Made script executable: `chmod +x s3_backup.sh`
 - Executed the script and verified results
 
+![Script Creation](images/save-script.png)
+*Creating and saving the backup script with nano*
+
+![Grant Permissions](images/grant-executable-permissions.png)
+*Making the script executable with chmod +x*
+
 ### 4. Verification
 - Checked S3 bucket to confirm files were uploaded successfully
 - Reviewed generated report for upload verification
+
+![CLI Verification](images/verify-files-cli.png)
+*Verifying uploaded files using AWS CLI*
+
+![Console Verification](images/verify-files-aws-console.png)
+*Confirming file uploads in the AWS S3 console*
 
 ## 📋 Script Features
 
@@ -200,6 +218,18 @@ Generating report...
 Verifying uploaded files...
 Backup, bucket check, and verification complete. Report saved to ./upload_report.txt.
 ```
+
+## 📸 Project Walkthrough
+
+The images above demonstrate the complete project workflow from setup to verification, showing:
+
+✅ **AWS CLI Configuration** - Proper credential setup  
+✅ **Directory Structure** - Organized file management  
+✅ **Script Development** - Professional bash scripting  
+✅ **Permission Management** - Security best practices  
+✅ **Verification Process** - Both CLI and console validation  
+
+This visual documentation proves hands-on experience with AWS services and automation scripting.
 
 ## 📈 Generated Report Example
 
