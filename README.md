@@ -27,7 +27,7 @@ The diagram illustrates the complete workflow:
 └── upload_report.txt      # Generated report (after script execution)
 ```
 
-## 🚀 Setup Process
+# 🚀 Steps Performed
 
 ### 1. AWS Configuration
 - Created IAM user with programmatic access
